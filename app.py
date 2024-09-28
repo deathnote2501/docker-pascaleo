@@ -8,7 +8,7 @@ from pydub.utils import which
 AudioSegment.ffmpeg = which("ffmpeg")
 
 # Obtenir la clé API OpenAI à partir d'une variable d'environnement
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("OPENAI_PASCALEO_API_KEY")
 
 if not api_key:
     st.error("Erreur : la clé API OpenAI n'est pas définie. Veuillez configurer la variable d'environnement OPENAI_API_KEY.")
